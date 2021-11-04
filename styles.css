@@ -1,0 +1,28 @@
+body {
+    background-color: black;
+    color: white;
+    margin: 0 auto;
+    width: 800px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+    margin-top: 1%;
+    padding: 0;
+}
+
+#numbers-table {
+    display: inline;
+    text-align: center;
+}
+
+.numbers {
+    display: inline-block;
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+    background-color: cadetblue;
+    margin: 5px
+}
