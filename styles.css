@@ -16,19 +16,18 @@ h1 {
 }
 
 #numbers-table {
-    display: inline-block;
+    display: inline-table;
     text-align: center;
 }
 
 .numbers {
     display: inline-block;
     text-align: center;
-    align-content: center;
-    border-color: rgb(190, 190, 190);
+    border-color: rgb(83, 83, 83);
     border-style: solid;
     border-width: 1px;
     border-radius: 10%;
-    background-color: rgb(100, 100, 100);
+    background-color: rgb(39, 39, 39);
     padding: 3%;
     width: 50px;
     margin: 5px;
@@ -50,4 +49,9 @@ h1 {
     text-align: center;
     margin: 0;
     padding: 0;
+    margin-bottom: 10px;
+}
+
+.highlightedNumber {
+    background-color: cornflowerblue;
 }
