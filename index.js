@@ -1,8 +1,8 @@
 const displayNumbersTable = function() {
     let table = document.getElementById("numbers-table")
-    for (let number=1; number<=76; number++){
+    for (let i=1; i<=76; i++){
         let numberCharacter = document.createElement("div")
-        numberCharacter.innerText = number
+        numberCharacter.innerText = i
         numberCharacter.classList.add("numbers")
         table.appendChild(numberCharacter)
     }
@@ -10,13 +10,14 @@ const displayNumbersTable = function() {
 
 const randomizeNumber = function () {
     let randomNum = Math.floor(Math.random() * 76)
-    let numbersTable = document.getElementsByClassName("numbersTable")
+    console.log(randomNum)
+    let numbersTable = document.querySelectorAll(".numbers")
+    console.log(numbersTable)
     for (let i=0; i<numbersTable.length; i++){
-        if (numbersTable[i] === randomNum) {
-            numbersTable[i].classList.add("highlightedNumber")
+        if (numbersTable[i].innerText == randomNum) {
+            numbersTable[i].classList.toggle("highlightedNumber")
         }
     }
-    console.log(randomNum)
 }
 
 window.onload = function () {
