@@ -6,9 +6,11 @@ const displayNumbersTable = function() {
         numberCharacter.classList.add("numbers")
         table.appendChild(numberCharacter)
     }
-
 }
 
+const randomizeNumber = function () {
+    
+}
 
 window.onload = function () {
     displayNumbersTable();
